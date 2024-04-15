@@ -1,0 +1,11 @@
+---
+
+- name: Ping win Test
+  hosts: domain
+  gather_facts: false
+  vars_files:
+    - win.yml
+
+  tasks:
+  - name: Ping targets
+    win_ping:
